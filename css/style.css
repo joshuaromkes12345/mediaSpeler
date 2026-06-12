@@ -1,0 +1,42 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* nav { 
+  width: 300px;
+  margin: 0 auto;
+} */
+
+header a {
+    color: black;
+}
+header a:hover {
+    color: rgba(137, 43, 226, 0.636);
+}
+
+#films_muziek {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 75vh;
+    gap: 30px;
+
+}
+
+#films_muziek a {
+    color: black;
+
+}
+
+#films_muziek a:hover {
+    color: blueviolet;
+}
+
+.soortTitel {
+    text-align: center;
+}
