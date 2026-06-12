@@ -8,8 +8,6 @@ $open = scandir($bestand);
 
 echo '<h2 class="soortTitel">' . $soort . '</h2>';
 
-
-
 ?>
 
 <table>
@@ -23,7 +21,7 @@ echo '<h2 class="soortTitel">' . $soort . '</h2>';
             echo '
             <tr>
                 <td>'. $key . ' </td>
-                <td><a href="#">'. $media . '</a></td>
+                <td><a href="'. $soort .'.php?media=' . $media .'">'. $media . '</a></td>
             </tr>
             ';
             $key++;
