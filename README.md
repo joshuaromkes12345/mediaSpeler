@@ -21,3 +21,5 @@ De volgende dingen zullen in de komende updates :
 - filters om je film/muziek beter te vinden tussen je grote lijst van spullen
 - sidebar waar je je films/muziek kunt bekijken op basis van categorie
 - versie voor servers met login systeem
+- playlist systeem voor muziek
+- suport voor meer file formats
