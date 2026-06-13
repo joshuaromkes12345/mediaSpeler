@@ -14,6 +14,10 @@ de structuur moet er zo uit komen te zien:
 De volgende dingen zullen in de komende updates :
 
 - preinstalled media folders
-- Pagina om nieuwe films/muziek toe te voegen zonder in de file's te moeten
-- database om categorieen en andere belangrijke dingen bij tehouden
+- Pagina om nieuwe films/muziek toe te voegen zonder in de files te moeten
+- database om categorieen en andere belangrijke dingen bij te houden
 - optie om gehele albums in de muziek folder te gooien in plaats van losse mp3 bestanden
+- verbeterde front-end
+- filters om je film/muziek beter te vinden tussen je grote lijst van spullen
+- sidebar waar je je films/muziek kunt bekijken op basis van categorie
+- versie voor servers met login systeem
