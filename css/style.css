@@ -9,10 +9,6 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* nav { 
-  width: 300px;
-  margin: 0 auto;
-} */
 
 header a {
     color: black;
@@ -42,16 +38,54 @@ header a:hover {
 .soortTitel {
     text-align: center;
 }
-table {
+.modern-table {
     width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background: white;
+    /* border-radius: 12px; */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(137, 43, 226, 0.085);
+    margin-top: 40px;
 }
 
-table, th, td {
-  border:1px solid black;
+.modern-table thead {
+    background: #000715;
+    color: white;
+}
 
+.modern-table th,
+.modern-table td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.modern-table tbody tr {
+    border-bottom: 1px solid rgba(137, 43, 226, 0.081);
+    transition: background 0.2s;
+}
+
+.modern-table tbody tr:hover {
+    background: rgba(137, 43, 226, 0.12);
+}
+
+.modern-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.mediaIndex {
+    color: blueviolet;
+}
+
+.mediaIndex:hover {
+    color:rgba(0, 0, 255, 0.558)
 }
 
 video {
     margin-top: 100px;
+}
+
+audio {
     width: 100%;
+    margin-top: 700px;
 }

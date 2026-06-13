@@ -10,7 +10,7 @@ echo '<h2 class="soortTitel">' . $soort . '</h2>';
 
 ?>
 
-<table>
+<table class="modern-table">
     <tr>
         <th>Index</th>
         <th>Naam</th>
@@ -21,7 +21,7 @@ echo '<h2 class="soortTitel">' . $soort . '</h2>';
             echo '
             <tr>
                 <td>'. $key . ' </td>
-                <td><a href="'. $soort .'.php?media=' . $media .'">'. $media . '</a></td>
+                <td><a class="mediaIndex" href="'. $soort .'.php?media=' . $media .'">'. $media . '</a></td>
             </tr>
             ';
             $key++;
