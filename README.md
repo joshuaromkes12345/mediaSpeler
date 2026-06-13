@@ -1,10 +1,19 @@
 # mediaSpeler
 
-dit is een basic MediaSpeler. Het is nog niet af, maar is werkende.
+Dit is een basic MediaSpeler. Het is nog niet af, maar is werkende.
 
 # Setup
 
-deze versie vereist lichte setup, namelijk het aanmaak van de media bestand, hier kun je je muziek en films folder in doen.
+Deze versie vereist lichte setup, namelijk het aanmaak van de media bestand, hier kun je je muziek en films folder in doen.
 de structuur moet er zo uit komen te zien:
 
 ``` ./mediaSpeler/media/films ``` en ``` ./mediaSpeler/media/muziek ```
+
+# Toekomst 
+
+De volgende dingen zullen in de komende updates :
+
+- preinstalled media folders
+- Pagina om nieuwe films/muziek toe te voegen zonder in de file's te moeten
+- database om categorieen en andere belangrijke dingen bij tehouden
+- optie om gehele albums in de muziek folder te gooien in plaats van losse mp3 bestanden
