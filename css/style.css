@@ -55,7 +55,6 @@ main {
     border-collapse: collapse;
     font-family: Arial, sans-serif;
     background: white;
-    /* border-radius: 12px; */
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(137, 43, 226, 0.085);
     margin-top: 40px;
@@ -123,7 +122,6 @@ form {
     gap: 15px;
 }
 
-/* Label */
 label {
     font-weight: bold;
     margin-bottom: -8px;

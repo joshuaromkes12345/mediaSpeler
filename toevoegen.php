@@ -1,7 +1,5 @@
 <?php
 
-
-
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if (!isset($_POST["soort"]) || !isset($_FILES["bestand"])) {
@@ -14,28 +12,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($bestand["error"] !== 0) {
         print_r($bestand);
-        die("Upload fout");
+        die("upload fout");
     }
 
     $tmp = $bestand["tmp_name"];
 
-    // map maken
     $map = "./media/" . $soort . "/";
     if (!is_dir($map)) {
         mkdir($map, 0777, true);
     }
 
-    // veilige bestandsnaam
     $ext = pathinfo($bestand["name"], PATHINFO_EXTENSION);
     $nieuweNaam = uniqid() . "." . $ext;
 
     $pad = $map . $nieuweNaam;
-
-    if (move_uploaded_file($tmp, $pad)) {
-        echo "Gelukt!";
-    } else {
-        echo "Mislukt!";
-    }
 }
 
 
@@ -52,7 +42,7 @@ require_once 'inc/header.php';
             <option value="film">Film</option>
         </select>
         <input type="file" id="bestand" name="bestand"
-       accept=".mp3,.mp4">
+       accept=".mp3,.mp4 ">
         <input type="submit" value="toevoegen">
     </form>
 </main>
