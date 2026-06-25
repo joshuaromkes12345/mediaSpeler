@@ -26,8 +26,8 @@ De volgende dingen zullen in de komende updates :
 - suport voor meer file formats
 
 
-# Gedaan
+# Gedaan✅
 
 Deze dingen stonden eerst onder toekomst maar zijn inmiddels al gedaan: 
 
-- Pagina om nieuwe films/muziek toe te voegen zonder in de files te moeten✅
+- Pagina om nieuwe films/muziek toe te voegen zonder in de files te moeten
