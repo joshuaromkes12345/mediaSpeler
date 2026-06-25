@@ -14,4 +14,5 @@
             <a class="navigatie" href="#">pagina2</a>
             <a class="navigatie" href="#">pagina3</a>
         </nav> -->
+        <a class="toevoegen" href="toevoegen.php"><h2>+</h2></a>
     </header>

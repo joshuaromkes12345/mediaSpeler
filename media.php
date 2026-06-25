@@ -6,6 +6,8 @@ $soort = htmlspecialchars($_GET['soort']);
 $bestand = "./media/" . $soort;
 $open = scandir($bestand);
 
+echo "<main>";
+
 echo '<h2 class="soortTitel">' . $soort . '</h2>';
 
 ?>
@@ -29,5 +31,7 @@ echo '<h2 class="soortTitel">' . $soort . '</h2>';
     }
     ?>
 </table>
+
+</main>
 
 <?php require_once 'inc/footer.php';?>

@@ -9,6 +9,8 @@ de structuur moet er zo uit komen te zien:
 
 ``` ./mediaSpeler/media/films ``` en ``` ./mediaSpeler/media/muziek ```
 
+De Toevoegen functie is extreem handig, maar kan het meeste setup veroorzaken, want de functie werkt met een form en alle webservers hebben een limiet op de filesize die je kunt uploaden om dit tegen te gaan gebruik deze 2 scripts aan het begin van de code (maakt niet uit waaar): ``` echo "max upload size: " . ini_get('upload_max_filesize'); echo "post max size: " . ini_get('post_max_size');``` Dan kunt u zien wat de max is en verander dan in uw .ini bestand deze 2 variabelen naar wat u wilt ``` post_max_size ``` en ``` upload_max_filesize ``` voor mij is dat 2G (2 gigabyte)
+
 # Toekomst 
 
 De volgende dingen zullen in de komende updates :

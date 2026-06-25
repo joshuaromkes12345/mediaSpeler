@@ -1,5 +1,5 @@
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -7,8 +7,16 @@ header {
     width: 100%;
     position:fixed;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    align-items: center;
 }
 
+.toevoegen {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 header a {
     color: black;
@@ -33,6 +41,10 @@ header a:hover {
 
 #films_muziek a:hover {
     color: blueviolet;
+}
+
+main {
+    padding-top: 80px;
 }
 
 .soortTitel {
@@ -86,6 +98,88 @@ video {
 }
 
 audio {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+#toevoegen_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label */
+label {
+    font-weight: bold;
+    margin-bottom: -8px;
+}
+
+select {
+        border: 1px solid #ccc;
+}
+
+select:hover {
+    border: 1px solid #b1a7a7;
+}
+
+select,
+input[type="file"] {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
     width: 100%;
-    margin-top: 700px;
+    box-sizing: border-box;
+    
+}
+input[type="file"] {
+    transition: 0.2s ease-in;
+    border: 2px dashed #ccc;
+}
+
+input[type="file"]:hover {
+    border: 2px dashed #000715;
+}
+input[type="file"]::file-selector-button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: ease-in-out 0.2s;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: rgb(108, 34, 177);
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(63, 63, 63);
 }
