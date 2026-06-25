@@ -26,6 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nieuweNaam = uniqid() . "." . $ext;
 
     $pad = $map . $nieuweNaam;
+
+    if (move_uploaded_file($tmp, $pad)) {
+        echo "gelukt!";
+    } else {
+        echo "mislukt!";
+    }
 }
 
 

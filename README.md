@@ -16,7 +16,7 @@ De Toevoegen functie is extreem handig, maar kan het meeste setup veroorzaken, w
 De volgende dingen zullen in de komende updates :
 
 - preinstalled media folders
-- Pagina om nieuwe films/muziek toe te voegen zonder in de files te moeten
+- Pagina om nieuwe films/muziek toe te voegen zonder in de files te moeten✅
 - database om categorieen en andere belangrijke dingen bij te houden
 - optie om gehele albums in de muziek folder te gooien in plaats van losse mp3 bestanden
 - verbeterde front-end
