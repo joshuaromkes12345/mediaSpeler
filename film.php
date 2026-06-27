@@ -6,8 +6,6 @@ $film = basename($_GET['media'] ?? '');
 $pad = './media/film/' . $film;
 ?>
 
-
-
 <div id="videodivs">
     <video controls width="1500">
         <source src="<?= htmlspecialchars($pad) ?>" type="video/mp4">

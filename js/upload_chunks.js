@@ -1,4 +1,3 @@
-
 const form = document.getElementById("uploadForm");
 const laden = document.getElementById("status");
 
@@ -16,15 +15,19 @@ form.addEventListener("submit", async function(event) {
 
     const soort = document.getElementById("soort").value;
 
+    // creëer de chunks
     const chunkgrootte = 10 * 1024 * 1024;
     const aantalChunks = Math.ceil(bestand.size / chunkgrootte);
+    // loop door iedere chunk
     for (let i = 0; i < aantalChunks; i++) {
 
         const start = i * chunkgrootte;
         const eind = Math.min(start + chunkgrootte, bestand.size);
 
+        // slice de chunks
         const chunk = bestand.slice(start, eind);
 
+        // creëer form data die naar upload.php gaan
         const formData = new FormData();
 
         formData.append("chunk", chunk);
@@ -37,10 +40,8 @@ form.addEventListener("submit", async function(event) {
             method: "POST",
             body: formData
         });
-
-        console.log(`Chunk ${i + 1} van ${aantalChunks} verstuurd`);
     }
-    
+    // einde van upload
     alert("Upload voltooid!");
     window.location.href = "index.php";
 });

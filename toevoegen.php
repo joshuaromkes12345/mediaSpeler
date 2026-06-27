@@ -9,7 +9,7 @@
         </select>
         <input type="file" id="bestand" name="bestand"
         accept=".mp3,.mp4,.mov">
-        <button id="submit" type="submit">Upload</button>
+        <button id="submit" type="submit">Toevoegen</button>
     </form>
 </main>
 

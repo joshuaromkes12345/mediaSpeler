@@ -34,23 +34,21 @@ for ($i = 0; $i < $total; $i++) {
 }
 
 if ($allExist) {
-
+    // waar het bestand heen moet gaan
     $output = fopen($mediaDir . "/" . $filename, "wb");
-
+    // loopt door de chunks heen
     for ($i = 0; $i < $total; $i++) {
 
         $inputPath = "$dir/$i.part";
 
         $input = fopen($inputPath, "rb");
         if (!$input) continue;
-
+        
         while (!feof($input)) {
             fwrite($output, fread($input, 8192));
         }
-
         fclose($input);
     }
-
     fclose($output);
 
     for ($i = 0; $i < $total; $i++) {
