@@ -92,6 +92,12 @@ main {
     color:rgba(0, 0, 255, 0.558)
 }
 
+#videodivs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 video {
     margin-top: 100px;
 }
