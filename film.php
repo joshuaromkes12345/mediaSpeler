@@ -3,7 +3,7 @@
 require_once 'inc/header.php';
 
 $film = basename($_GET['media'] ?? '');
-$pad = './media/films/' . $film;
+$pad = './media/film/' . $film;
 ?>
 
 

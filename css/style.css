@@ -122,11 +122,6 @@ form {
     gap: 15px;
 }
 
-label {
-    font-weight: bold;
-    margin-bottom: -8px;
-}
-
 select {
         border: 1px solid #ccc;
 }
@@ -167,7 +162,7 @@ input[type="file"]::file-selector-button:hover {
     background-color: rgb(108, 34, 177);
 }
 
-input[type="submit"] {
+button[type="submit"] {
     background-color: black;
     color: white;
     border: none;
@@ -175,9 +170,14 @@ input[type="submit"] {
     font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: rgb(63, 63, 63);
+}
+
+#status {
+    text-align: center;
+    margin-top: 20px;
 }
